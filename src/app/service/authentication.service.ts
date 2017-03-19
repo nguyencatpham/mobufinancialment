@@ -9,7 +9,7 @@ export class AuthenticationService {
     constructor(private _http: Http) { };
     login(username: string, password: number) {
 
-        return this._http.post('http://localhost:4000/users/authentication', { username: username, password: password })
+        return this._http.post('http://54.179.164.89:4000/users/authentication', { username: username, password: password })
             .map((response: any) => {
                 // login successful if there's a jwt token in the response
                 let user = response.json();

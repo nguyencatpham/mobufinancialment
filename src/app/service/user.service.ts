@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class UserService {
-  private host = "http://localhost:4000";
+  private host = "http://54.179.164.89:4000/";
   private getlistApi = this.host + "/users";
   private registerApi =this.host +  "/users/register";
 

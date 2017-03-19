@@ -1,0 +1,40 @@
+<!--<div class="row">
+  <div class="col-md-12">
+    <input type="text" [(ngModel)]="keyword" name="keyword"/>
+    <button (click)="Search()">Search</button>
+  </div>
+</div>-->
+<table class="table">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>pass</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let login of listuser">
+            <td>{{login.username}}</td>
+            <td>{{login.age}}</td>
+            
+            <!--<td><a [routerLink]="['/employeeDetail',employee.id]">Detail</a></td>
+       
+            <td><a [routerLink]="['/employeeEdit',employee.id]">Edit</a></td>
+            <td><a [routerLink]="['/employeeAdd']">Add</a></td>
+            <button class="btn btn-danger" (click)="Delete(employee.id)">Delete</button>-->
+        </tr>
+    </tbody>
+</table>
+<nav aria-label="Page navigation">
+  <!--<ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    <li *ngFor="let page of pages"><a [routerLink]="['/employee']" [queryParams]="{pageNumber:page}">{{page}}</a></li>
+   
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>-->
+</nav>

@@ -1,0 +1,17 @@
+<form class="form" #f="ngForm" (ngSubmit)="SaveForm()">
+    <tr>
+        <td>username</td>
+        <td><input type="text" name="name" [(ngModel)]="user.username"/></td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td><input type="password" name="password" [(ngModel)]="user.password"></td>
+    </tr>
+    <tr>
+        <td>
+            <button class="btn btn-primary"type="submit">Create account</button>
+            <button (click)="GoToLogin()" class="btn btn-default"type="button">Cancel</button>
+        </td>
+    </tr>
+</form>
+
